@@ -6,7 +6,7 @@ exports.run = async(client, message, args) => {
 
 if(!message.member.permissions.has("ADMINISTRATOR")) return message.channel.send(":x: Bu komutu kullanmak için yeterli yetkiye sahip değilsin!") 
 
-let codemingdb = await db.fetch(`cesayaç_${message.guild.id}`) 
+let astraldb = await db.fetch(`cesayaç_${message.guild.id}`) 
 let kanal = message.mentions.channels.first() || message.guild.channels.cache.get(args[0])  
 let count = args[1]
 
