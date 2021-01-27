@@ -1,8 +1,8 @@
 const Discord = require('discord.js')
 exports.run = async(client, msg, args) => {
 
-let codemingUser = msg.mentions.users.first() || args[0] || msg.author
-client.users.fetch(codemingUser.id || codemingUser).then(ceuser => { Profil(ceuser) })
+let astralUser = msg.mentions.users.first() || args[0] || msg.author
+client.users.fetch(astralUser.id || astralUser).then(astuser => { Profil(astuser) })
 async function Profil(users) {
 let embed = new Discord.MessageEmbed()
 .setColor('GREEN')
