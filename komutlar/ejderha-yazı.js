@@ -2,9 +2,9 @@ const Discord = require("discord.js");
 
 exports.run = (client, message, args) => {
 
-let MaximusBoysCode = args.slice(0).join("+");
-if (!MaximusBoysCode) return message.channel.send("Lütfen Bişey Yaz");
-let link ="https://dynamic.brandcrowd.com/asset/logo/055241ff-dc4f-4743-90be-1c9caa0c900b/logo?v=4&text=" + MaximusBoysCode;
+let AstralCode = args.slice(0).join("+");
+if (!AstralCode) return message.channel.send("Lütfen Bişey Yaz");
+let link ="https://dynamic.brandcrowd.com/asset/logo/055241ff-dc4f-4743-90be-1c9caa0c900b/logo?v=4&text=" + AstralCode;
 
 const Embed = new Discord.MessageEmbed()
 
