@@ -3,9 +3,9 @@ const client = new Discord.Client();
 
 exports.run = (client, message) => {
 
-message.channel.send("FwhyCode | Espri yükleniyor.").then(message => {
+message.channel.send("Botİsmi | Espri yükleniyor.").then(message => {
 
-    var FwhyCode = [
+    var AstralCode = [
  
       "Seni görünce; \ngözlerim dolar, \nkulaklarım euro.",
       "Kar üzerinde yürüyen adama ne denir. Karabasan.",
@@ -27,9 +27,9 @@ message.channel.send("FwhyCode | Espri yükleniyor.").then(message => {
 
     ];
 
-    var FwhyCode = FwhyCode[Math.floor(Math.random() * FwhyCode.length)];
+    var AstralCode = AstralCode[Math.floor(Math.random() * AstralCode.length)];
 
-    message.edit(`${FwhyCode}`);
+    message.edit(`${AstralCode}`);
   });
 };
 
