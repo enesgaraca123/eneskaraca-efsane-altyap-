@@ -22,7 +22,7 @@ for (const ap of sonuc) {
 })
 };
 
-// BU KOMUT codare.fun' DAN ALINTIDIR!
+// Astral
  
 
 exports.conf = {
