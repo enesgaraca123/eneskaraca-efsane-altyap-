@@ -6,7 +6,7 @@ exports.run = async function(client, message, args) {
 message.channel.send(new Discord.MessageEmbed()
 .setColor("GREEN")
 .setDescription(" Quinzel | Yardım Menüsü \n\n 🎉   Basarsanız Eğlence Komutlarını Görürsünüz \n\n 👤 Basarsanız Genel/Kullanıcı Kodlarını Görürsünüz \n\n 🚫 Basarsanız Yetkili Komutlarını Görürsünüz"))
-.then(async function(maximusboys) {
+.then(async function(astralcode) {
         const emojiler = ["🎉", "👤", "🚫", "🔒"];
         const filter = (reaction) =>
           emojiler.includes(reaction.emoji.name)
@@ -14,13 +14,13 @@ message.channel.send(new Discord.MessageEmbed()
         await maximusboys.react(emojiler[1]).catch(function() {});
         await maximusboys.react(emojiler[2]).catch(function() {});
          await maximusboys.react(emojiler[3]).catch(function() {});
-              var reactions = maximusboys.createReactionCollector(filter, {
+              var reactions = astralcode.createReactionCollector(filter, {
                 
         });
  reactions.on("collect", async function (reaction) {
    if(reaction.bot) return;
 				if (reaction.emoji.name === "🎉") {  
-        const maximusboys = new Discord.MessageEmbed()        
+        const AstralCode = new Discord.MessageEmbed()        
    .setDescription(`🎉${client.user.username} | Eğlence Menüsü🎉`)
         .addField(`q!yazıtura`,`Yazı Tura Oynar.`)
         .addField(`q!tokat @kullanıcı`,`Etiketlediğiniz Kişiyi Tokatlar.`)
@@ -32,10 +32,10 @@ message.channel.send(new Discord.MessageEmbed()
         .addField(`q!kaçcm`,`Kaç Cm Olduğunu Gösterir.`)
         .addField(`q!kralol`,`Kral Olursunuz.`)
         .addField(`q!öp @kullanıcı`,`Etiketlediğiniz Kullanıcıyı Öper.`)
-         message.channel.send(maximusboys)
+         message.channel.send(AstralCode)
         }
     if (reaction.emoji.name === "👤") {          
-   const maximusboys= new Discord.MessageEmbed()        
+   const AstralCode = new Discord.MessageEmbed()        
      .setDescription(`👤${client.user.username} | Genel/Kullanıcı Menüsü👤`)
         .addField(`q!avatar @kullanıcı`,`Etiketlediğiniz Kullanıcının Avatarını Gösterir.`)
         .addField(`q!yılbaşı`,`Yılbaşına Ne Kadar Kaldığını Gösterir.`)
@@ -50,10 +50,10 @@ message.channel.send(new Discord.MessageEmbed()
         .addField(`q!hesapla İşlem`,`Sadece Toplama Çıkarma Olur.`)
         .addField(`q!sunucu`,`Sunucu İstastiklerini Gösterir.`)
         .addField(`q!habbo yazınız`,`Yazdığınız Şeyin Habbo Logosunu Yapar.`)
-         message.channel.send(maximusboys)
+         message.channel.send(AstralCode)
     }
     if (reaction.emoji.name === "🚫") {          
-   const maximusboys = new Discord.MessageEmbed()      
+   const AstralCode = new Discord.MessageEmbed()      
    .setDescription(`🚫${client.user.username} | Yetkili Menüsü🚫`)
         .addField(`q!otorol <ayarla/sıfırla> @rol`,` Otorol Verir.`)
         .addField(`q!sayaç-ayarla #sayaç-kanalı Sayı`,`Sayaç Açar Sunucuda.`)
@@ -65,7 +65,7 @@ message.channel.send(new Discord.MessageEmbed()
         .addField(`q!nuke`,`Odadaki Tüm Mesajları Siler.`)
         .addField(`q!erken-hesap-engel`,`Erken Açılan Hesaplara Ceza Verir.`)
         .addField(`q!ban`,`Ban Log Ayarlamanız ve Ban Yetkilisi Ayarlamanız Lazım.`)
-         message.channel.send(maximusboys)
+         message.channel.send(AstralCode)
    }   
 })})}
 exports.conf = {
