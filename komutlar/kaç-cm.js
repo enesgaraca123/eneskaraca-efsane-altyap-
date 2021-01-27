@@ -3,11 +3,11 @@ const client = new Discord.Client();
 
 exports.run = (client, message) => {
 
-message.channel.send("FwhyCode | Hemen Diyorum Abi 1 Saniye..").then(message => {
+message.channel.send("AstralCode | Hemen Diyorum Abi 1 Saniye..").then(message => {
 
-    var FwhyCode = [
+    var AstralCode = [
 
-      "**Senin Malafatın  18CM ** :eggplant: ",
+      "**Senin Malafatın  18M ** :eggplant: ",
       "**Senin Malafatın  11CM ** :eggplant:",
       "**Senin Malafatın 32CM  ** :eggplant:",
       "**Senin Malafatın  35CM ** :eggplant:",
@@ -20,9 +20,9 @@ message.channel.send("FwhyCode | Hemen Diyorum Abi 1 Saniye..").then(message => 
 
     ];
 
-    var FwhyCode = FwhyCode[Math.floor(Math.random() * FwhyCode.length)];
+    var AstralCode = AstralCode[Math.floor(Math.random() * AstralCode.length)];
 
-    message.edit(`${FwhyCode}`);
+    message.edit(`${AstralCode}`);
   
   });
 };
