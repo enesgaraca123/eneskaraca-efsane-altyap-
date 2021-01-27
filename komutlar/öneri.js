@@ -14,12 +14,12 @@ if(!kanal) return message.channel.send('<:thumbsup:700453199890350122> Önerilog
 if(user) return message.reply('<:thumbsup:700453199890350122> Öneri komudunda kimseyi etiketleyemezsin') 
                 
   message.channel.send('<:thumbsup:700453177987825724> Önerin log kanalına iletildi. ') 
-  let codeming = new Discord.MessageEmbed()
+  let astral = new Discord.MessageEmbed()
   .setThumbnail( message.author.avatarURL )
   .setFooter( message.author.username , client.user.avatarURL )
   .setTitle(' ⚡ | Yeni Öneri! ')
   .setDescription(`Öneren Kişi : ${message.author} ( ${message.author.id}) \n Önerisi : **${öneri}** `)
-  kanal.send(codeming)
+  kanal.send(astral)
 
 }
 
