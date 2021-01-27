@@ -2,21 +2,21 @@ const Discord = require("discord.js");
 
 exports.run = function(client, message, args) {
 
-const FwhyCode = message.mentions.users.first();
+const AstralCode = message.mentions.users.first();
 
-if (!FwhyCode) return message.reply("Beşlik Çakacağın Kişiyi Etiketlemelisin");
+if (!AstralCode) return message.reply("Beşlik Çakacağın Kişiyi Etiketlemelisin");
 
-const EmbedFwhyCode = new Discord.MessageEmbed()
+const EmbedAstralCode = new Discord.MessageEmbed()
 
     .setDescription(
-      `${FwhyCode} ` + `ve **${message.author.username}** Beşlik Çaktı`
+      `${AstralCode} ` + `ve **${message.author.username}** Beşlik Çaktı`
     )
     .setImage(
       "https://cdn.discordapp.com/attachments/747769679984066582/748956281930383520/tenor_3.gif"
     )
     .setFooter(client.user.username + " Sundu", client.user.avatarURL)
   
- return message.channel.send(EmbedFwhyCode);
+ return message.channel.send(EmbedAstralCode);
 };
 exports.conf = {
   enabled: true,
